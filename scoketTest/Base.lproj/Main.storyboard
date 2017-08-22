@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,6 +56,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118.125" y="137.32394366197184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mrY-QS-uHE">
+            <objects>
+                <viewController id="69c-WF-jwg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LX8-Xe-8zi"/>
+                        <viewControllerLayoutGuide type="bottom" id="bqw-Dq-KpP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MoM-9p-3XY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LK5-c4-CeF">
+                                <rect key="frame" x="16" y="67" width="288" height="434"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nuM-BH-7w1">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="138"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c03-X5-7q0">
+                                        <rect key="frame" x="0.0" y="148" width="288" height="138"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SYJ-Ph-sGh">
+                                        <rect key="frame" x="0.0" y="296" width="288" height="138"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="vertical"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LK5-c4-CeF" firstAttribute="top" secondItem="LX8-Xe-8zi" secondAttribute="bottom" constant="47" id="9Qt-q4-bTb"/>
+                            <constraint firstItem="LK5-c4-CeF" firstAttribute="leading" secondItem="MoM-9p-3XY" secondAttribute="leadingMargin" id="DXF-bq-h7I"/>
+                            <constraint firstItem="LK5-c4-CeF" firstAttribute="centerY" secondItem="MoM-9p-3XY" secondAttribute="centerY" id="Sst-BU-NDn"/>
+                            <constraint firstItem="LK5-c4-CeF" firstAttribute="centerX" secondItem="MoM-9p-3XY" secondAttribute="centerX" id="qTe-Fi-uGF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeq-Im-XGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="146.83098591549296"/>
         </scene>
     </scenes>
 </document>

@@ -27,8 +27,6 @@ class ViewController: UIViewController {
     //socket客户端类对象
     var socketClient:TCPClient?
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -77,7 +75,7 @@ class ViewController: UIViewController {
                 
                 //不断接收服务器发来的消息
                while true{
-                   if let msg=readmsg(){
+                   if let msg = readmsg(){
                      DispatchQueue.main.async {
                         self.processMessage(msg: msg)
                          }

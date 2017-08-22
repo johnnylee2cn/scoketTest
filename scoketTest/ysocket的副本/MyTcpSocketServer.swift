@@ -21,11 +21,11 @@ class ChatUser:NSObject{
     func readMsg()->[String:Any]?{
         //read 4 byte int as type
         if let data=self.tcpClient!.read(4){
-            if data.count==4{
-                let ndata=NSData(bytes: data, length: data.count)
-                var len:Int32=0
+            if data.count == 4{
+                let ndata = NSData(bytes: data, length: data.count)
+                var len:Int32 = 0
                 ndata.getBytes(&len, length: data.count)
-                if let buff=self.tcpClient!.read(Int(len)){
+                if let buff = self.tcpClient!.read(Int(len)){
                     
                     let msgd = Data(bytes: buff, count: buff.count)
                     let msgi = (try! JSONSerialization.jsonObject(with: msgd,
